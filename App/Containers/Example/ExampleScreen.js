@@ -17,7 +17,7 @@ class ExampleScreen extends React.Component {
   render() {
     return (
       <View style={Style.container}>
-        <Text>TEST BOILERPLATE</Text>
+        <Text>TEST BOILERPLATE TOPIK MUJIANTO</Text>
       </View>
     )
   }

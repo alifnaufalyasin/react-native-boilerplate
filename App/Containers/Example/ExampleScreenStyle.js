@@ -5,50 +5,50 @@ import ApplicationStyles from 'App/Theme/ApplicationStyles'
 export default StyleSheet.create({
   container: {
     ...ApplicationStyles.screen.container,
-    backgroundColor: 'red',
+    alignItems: 'center',
     flex: 1,
     justifyContent: 'center',
     margin: 30,
   },
   error: {
     ...Fonts.style.normal,
-    textAlign: 'center',
-    marginBottom: 5,
     color: 'red',
+    marginBottom: 5,
+    textAlign: 'center',
   },
   instructions: {
     ...Fonts.style.normal,
-    textAlign: 'center',
-    marginBottom: 5,
     fontStyle: 'italic',
+    marginBottom: 5,
+    textAlign: 'center',
   },
   loading: {
     ...Fonts.style.normal,
-    textAlign: 'center',
     marginBottom: 5,
+    textAlign: 'center',
   },
   logo: {
-    width: '100%',
     height: '100%',
+    width: '100%',
   },
   logoContainer: {
-    width: '100%',
     height: 300,
     marginBottom: 25,
+    width: '100%',
   },
   result: {
     ...Fonts.style.normal,
-    textAlign: 'center',
     marginBottom: 5,
+    textAlign: 'center',
   },
   text: {
     ...Fonts.style.normal,
-    textAlign: 'center',
     marginBottom: 5,
+    textAlign: 'center',
   },
   title: {
     ...Fonts.style.h2,
-    textAlign: 'center',
     marginBottom: 10,
+    textAlign: 'center',
   },
 })
