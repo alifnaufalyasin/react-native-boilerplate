@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { Config } from 'App/Config'
+import { BASE_URL, API } from '../Config/BaseURL'
 import { is, curryN, gte } from 'ramda'
 
 const isWithin = curryN(3, (min, max, value) => {
@@ -17,7 +17,7 @@ const userApiClient = axios.create({
   /**
    * Import the config from the App/Config/index.js file
    */
-  baseURL: Config.API_URL,
+  baseURL: BASE_URL,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
@@ -33,9 +33,8 @@ function fetchUser() {
     })
   }
 
-  let number = Math.floor(Math.random() / 0.1) + 1
-
-  return userApiClient.get(number.toString()).then((response) => {
+  // let number = Math.floor(Math.random() / 0.1) + 1
+  return userApiClient.get(API.users).then((response) => {
     if (in200s(response.status)) {
       return response.data
     }

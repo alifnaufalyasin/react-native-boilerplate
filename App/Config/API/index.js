@@ -1,4 +1,3 @@
-export default class API {
-    static users = '/users/'
+export default class Api {
+  static users = '/users/'
 }
-
